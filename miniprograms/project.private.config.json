@@ -1,0 +1,105 @@
+{
+  "description": "项目私有配置文件。此文件中的内容将覆盖 project.config.json 中的相同字段。项目的改动优先同步到此文件中。详见文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html",
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/applyOrder/applyOrder",
+          "pathName": "pages/applyOrder/applyOrder",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "pages/addAddress/addAddress",
+          "pathName": "pages/addAddress/addAddress",
+          "query": "address=%7B%22build%22%3A%22%E6%95%99%E5%AD%A6%E5%8C%BA-5%E6%95%99%22%2C%22houseNumber%22%3A%22222%22%2C%22name%22%3A%22ewee%22%2C%22phone%22%3A%2211122223333%22%2C%22defaultAddress%22%3Afalse%7D&index=2",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "pages/updateInfo/updateInfo",
+          "pathName": "pages/updateInfo/updateInfo",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "pages/address/address",
+          "pathName": "pages/address/address",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "pages/print/print",
+          "pathName": "pages/print/print",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "pages/getExpress/getExpress",
+          "pathName": "pages/getExpress/getExpress",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "pages/selectBuild/selectBuild",
+          "pathName": "pages/selectBuild/selectBuild",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "pages/address/address",
+          "pathName": "pages/address/address",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "pages/addAddress/addAddress",
+          "pathName": "pages/addAddress/addAddress",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/index/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/applyOrder/applyOrder",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/person/person",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/order/order",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        }
+      ]
+    }
+  },
+  "libVersion": "2.19.6",
+  "projectname": "SoCool",
+  "setting": {
+    "compileHotReLoad": true
+  }
+}

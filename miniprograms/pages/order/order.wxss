@@ -1,0 +1,332 @@
+.scroll_view {
+	background-color: #fff;
+	white-space: nowrap;
+}
+
+.tab {
+	display: flex;
+	text-align: center;
+}
+
+.tab .tab_item {
+	height: 90rpx;
+	display: inline-block;
+	line-height: 90rpx;
+	margin: 0 10rpx;
+  padding: 0 20rpx;
+  /* 作用：使得子元素平均分配空间 */
+	flex: 1;
+}
+
+/* 选中效果 */
+.select {
+	color: #45bd6d;
+	border-bottom: 4rpx solid #45bd6d;
+}
+
+.body .tips {
+	width: 100%;
+  background-image: linear-gradient(#abd2f7e7,#7cb9f3e7, #3898f1e7);
+	text-align: center;
+	color: #fff;
+  padding: 5rpx 0;
+  font-size: 30rpx;
+}
+
+.order {
+	background-color: #fff;
+	width: 85%;
+	margin: 0 auto;
+	border-radius: 25rpx;
+	padding: 25rpx;
+	margin-top: 30rpx;
+}
+
+.order .order_top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.order .order_top .top_left {
+	display: flex;
+}
+
+.order .order_top .top_left image {
+	width: 60rpx;
+	height: 60rpx;
+	border-radius: 50%;
+}
+
+.order .order_top .top_left .name {
+	display: flex;
+	flex-direction: column;
+	margin-left: 20rpx;
+}
+
+.order .order_top .top_left .name text:nth-child(2) {
+	color: #aaa;
+	font-size: 26rpx;
+}
+
+/* 待帮助 状态 */
+.order .order_top .top_right {
+	color: rgb(241, 13, 13);
+	background-color: rgba(214, 124, 124, 0.2);
+	padding: 10rpx 25rpx;
+	border: 15rpx;
+	font-size: 28rpx;
+}
+
+.order .order_content {
+	padding-left: 70rpx;
+	padding-top: 20rpx;
+}
+
+.order .order_content .address {
+	color: #1067D1;
+	font-size: 30rpx;
+}
+
+.order .order_bottom {
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 15rpx;
+}
+
+.order .order_bottom .money {
+	color: rgb(36, 16, 216);
+	background-color: rgba(62, 102, 211, 0.2);
+	padding: 15rpx 25rpx;
+	border-radius: 10rpx;
+  font-size: 28rpx;
+}
+
+.order .order_bottom .accept {
+	color: #fff;
+	background-color: #45bd6d;
+	padding: 15rpx 50rpx;
+	margin-left: 25rpx;
+	border-top-left-radius: 25rpx;
+	border-bottom-right-radius: 25rpx;
+	font-size: 28rpx;
+}
+
+/* 已完成状态 */
+.order .order_top .top_right_finish {
+	color: rgb(255, 153, 0);
+	background-color: rgb(255, 247, 235);
+	padding: 10rpx 25rpx;
+	border-radius: 10rpx;
+	font-size: 28rpx;
+}
+
+/* 已帮助状态 */
+.order .order_top .top_right_help {
+	color: rgb(16, 103, 209);
+	background-color: rgba(16, 103, 209, .2);
+	padding: 10rpx 25rpx;
+	border-radius: 10rpx;
+	font-size: 28rpx;
+}
+
+.helpOrderInfo {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	background-color: #fff;
+	padding: 40rpx 0;
+}
+
+.helpOrderInfo .orderNum,
+.orderMoney {
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.helpOrderInfo .orderNum text:first-child,
+.orderMoney text:first-child {
+	font-weight: bold;
+	font-size: 26rpx;
+}
+
+.helpOrderInfo .orderNum text:last-child,
+.orderMoney text:last-child {
+	color: #a1a1a1;
+}
+
+.itemBox {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin: 10rpx 0;
+	border: 1rpx solid #00000020;
+	padding: 15rpx 0;
+}
+
+.sort {
+	width: 750rpx;
+	padding: 5rpx 25rpx;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-between;
+}
+
+.sort .icon {
+	transform: rotate(90deg) scaleY(1.8);
+}
+
+.sort .iconCheck {
+	transform: rotate(90deg) scaleY(1.8) rotateY(180deg);
+}
+.reset{
+	width: 750rpx;
+	padding: 5rpx 25rpx;
+	box-sizing: border-box;
+	text-align: right;
+}
+
+.itemBox .item {
+	width: 200rpx;
+	height: 50rpx;
+	margin: 5rpx 0;
+	background-color: #00000010;
+	text-align: center;
+	line-height: 50rpx;
+	font-size: 25rpx;
+	border-radius: 10rpx;
+}
+
+.itemBox .check {
+	background-color: #00000090;
+	color: #fff;
+}
+
+.comment input {
+  background-color: #f3f3f3;
+  font-size: 24rpx;
+  padding: 10rpx 20rpx;
+  margin-top: 25rpx;
+  margin-bottom: 20rpx;
+}
+
+.order .seeComment {
+  color: #4086e9;
+  margin-left: 15rpx;
+}
+
+.commentList {
+  display: flex;
+  flex-direction: column;
+  padding: 20rpx 10rpx;
+}
+
+.commentList .commentItem {
+  display: flex;
+  align-items: center;
+  margin-top: 25rpx;
+}
+
+.commentList .commentItem image {
+  width: 75rpx;
+  height: 75rpx;
+  border-radius: 50%;
+}
+
+.commentList .commentItem .name {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20rpx;
+  font-size: 24rpx;
+  font-weight: bold;
+  color: #8090a7;
+}
+
+.commentList .commentItem .name text:last-child {
+  margin-left: 15rpx;
+  margin-top: 15rpx;
+  color: black;
+}
+
+/* 评分 */
+.star {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.664);
+  border-radius: 40rpx;
+  height: 270rpx;
+  width: 60%;
+  padding: 50rpx 10rpx 20rpx 10rpx;
+  z-index: 9999;
+}
+
+.star text {
+  font-weight: bold;
+  margin-left: 20rpx;
+  margin-bottom: 60rpx;
+  color: #fff;
+}
+
+.star .starList {
+  display: flex;
+}
+
+.star .starList image {
+  width: 60rpx;
+  height: 60rpx;
+  margin: 0 20rpx;
+}
+
+.star .starBtn {
+  position: absolute;
+  bottom: 20rpx;
+  right: 20rpx;
+}
+
+.starNum {
+  position: relative;
+  bottom: -10rpx;
+  right: 25rpx;
+  /* margin-top: 20rpx; */
+  font-weight: bold;
+  color: #45bd6d;
+}
+
+/* 赏金猎人榜 */
+.body .orderRank {
+  background-color: #fff;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 30rpx;
+  border-radius: 30rpx;
+  padding: 25rpx 40rpx;
+  box-sizing: border-box;
+}
+
+.body .orderRank .left {
+  display: flex;
+  align-items: center;
+}
+
+.body .orderRank .left image {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+}
+
+.body .orderRank .left text {
+  margin-left: 20rpx;
+}

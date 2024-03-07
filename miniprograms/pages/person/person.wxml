@@ -1,0 +1,70 @@
+<view class="info" bindtap="updateInfo">
+  <image class="avatar" src="{{ hasUserInfo ? userInfo.avatarUrl : '../../images/touxiang.png' }}"></image>
+  <!-- 获取用户信息 做兼容 -->
+  <block wx:if="{{ !hasUserInfo }}">
+    <button  wx:if="{{ canIUseGetUserProfile }}" bindtap="getUserProfile" class="shouquan" style="position: relative; left: -50rpx; top: 10rpx">点 击 授 权</button>
+    <button wx:else open-type="getUserInfo" bindgetuserinfo="getUserInfo" class="shouquan">点 击 授 权</button>
+  </block>
+  <view class="name" wx:if="{{ hasUserInfo }}">
+    <text>{{ userInfo.nickName }}</text>
+    <text>天津商业大学</text>
+  </view>
+  <image wx:if="{{ hasUserInfo }}" class="into" src="../../images/dayu.png"></image>
+</view>
+
+<button class="cell mt" bindtap="applyOrder">
+  <view class="cellLeft">
+    <image src="../../images/apply.png"></image>
+    <text>申请接单</text>
+  </view>
+  <text class="cellRight">></text>
+</button>
+
+<!-- 【问题】在后台管理中完善逻辑 -->
+<button class="cell mt" bindtap="orderReceiver" wx:if="{{!admin}}">
+  <view class="cellLeft">
+    <image src="../../images/check.png"></image>
+    <text>审核接单申请</text>
+  </view>
+  <text class="cellRight">></text>
+</button>
+
+<view class="customerService mt">
+  <view class="tips">
+    有问题可点击“微信客服”复制vx号添加好友
+  </view>
+  <button class="cell" bindtap="getWXCustomer">
+    <view class="cellLeft">
+      <image src="../../images/wx.png"></image>
+      <text>微信客服</text>
+    </view>
+    <text class="cellRight">></text>
+  </button>
+  <!-- 测试号 -->
+  <button class="cell" open-type="contact">
+    <view class="cellLeft">
+      <image src="../../images/customService.png"></image>
+      <text>官方客服</text>
+    </view>
+    <text class="cellRight">></text>
+  </button>
+</view>
+
+<view class="other mt">
+  <button class="cell" bindtap="toAbout">
+    <view class="cellLeft">
+      <image src="../../images/about.png"></image>
+      <text>关于我们</text>
+    </view>
+    <text class="cellRight">></text>
+  </button>
+  <button class="cell" open-type="contact">
+    <view class="cellLeft">
+      <image src="../../images/advice.png"></image>
+      <text>投诉建议</text>
+    </view>
+    <text class="cellRight">></text>
+  </button>
+</view>
+
+<view class="version mt">当前版本: 1.0.0</view>

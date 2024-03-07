@@ -1,0 +1,25 @@
+<!-- 审核 申请接单 页面 -->
+<view class="body">
+  <!-- 没有申请时 -->
+  <image class="noneImg" src="../../images/none.png" wx:if="{{ receiveList.length === 0}}"></image>
+  <view class="noneData" wx:if="{{ receiveList.length === 0 }}">
+    暂无申请
+  </view>
+
+  <view class="receive" wx:for="{{ receiveList }}" wx:key="index">
+    <!-- 申请列表 -->
+    <view class="top">
+      <view class="name">申请人姓名：{{ item.name }}</view>
+      <view class="userID">申请人证件号：{{ item.userID }}</view>
+    </view>
+    <image src="{{ item.userIDImg }}" mode="aspectFit"></image>
+    <view class="btn">
+      <button type="warn" size="mini" data-item="{{ item }}" data-name="不通过" bindtap="toExamine">不通过</button>
+      <button type="primary" size="mini" data-item="{{ item }}" data-name="通过" bindtap="toExamine">通过</button>
+    </view>
+  </view>
+
+  <view class="showAll">
+      ———— <text>已显示全部</text> ————
+    </view>
+</view>

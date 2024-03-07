@@ -1,0 +1,36 @@
+<scroll-view scroll-x class="scroll_view">
+  <view class="tab">
+    <view class="tab_item {{ tabNow === index ? 'select' : '' }}" wx:for="{{ tabList }}" data-id="{{ index }}" wx:key="index" bindtap="selectTab">
+      {{ item }}
+    </view>
+  </view>
+</scroll-view>
+
+<view wx:if="{{ tabNow === 0 }}" class="body">
+  <view class="item" wx:for="{{ schoolBuilding }}" wx:key="index" bindtap="selectBuild" data-index="{{index}}">{{schoolBuilding[index]}}</view>
+</view>
+
+
+<view wx:if="{{ tabNow === 1 }}" class="body">
+  <view class="item" wx:for="{{ dormitory }}" wx:key="index" bindtap="selectBuild" data-index="{{index}}">{{dormitory[index]}}</view>
+</view>
+
+<view wx:if="{{ tabNow === 2 }}" class="body">
+  <view class="item" wx:for="{{ canteen }}" wx:key="index" bindtap="selectBuild" data-index="{{index}}">{{canteen[index]}}</view>
+</view>
+
+<view wx:if="{{ tabNow === 3 }}" class="body">
+  <view class="item" wx:for="{{ playground }}" wx:key="index" bindtap="selectBuild" data-index="{{index}}">{{playground[index]}}</view>
+</view>
+
+<view wx:if="{{ tabNow === 4 }}" class="body">
+  <view class="item" wx:for="{{ officeBuilding }}" wx:key="index" bindtap="selectBuild" data-index="{{index}}">{{officeBuilding[index]}}</view>
+</view>
+
+<view wx:if="{{ tabNow === 5 }}" class="body">
+  <view class="item" wx:for="{{ other }}" wx:key="index" bindtap="selectBuild" data-index="{{index}}">{{other[index]}}</view>
+</view>
+
+<view class="showAll">
+  <text>已显示全部</text>
+</view>
