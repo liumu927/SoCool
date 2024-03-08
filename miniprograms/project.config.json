@@ -1,11 +1,9 @@
 {
   "appid": "wxbe3589b6d86c3d09",
-  "projectname": "CampusRunning",
+  "projectname": "SoCool",
   "compileType": "miniprogram",
   "libVersion": "2.16.1",
   "srcMiniprogramRoot": "miniprogram/",
-  "cloudfunctionRoot": "cloudfunctions/",
-  "cloudfunctionTemplateRoot": "cloudfunctionTemplate/",
   "packOptions": {
     "ignore": [],
     "include": []

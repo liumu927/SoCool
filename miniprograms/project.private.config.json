@@ -97,7 +97,7 @@
       ]
     }
   },
-  "libVersion": "2.19.6",
+  "libVersion": "2.16.1",
   "projectname": "SoCool",
   "setting": {
     "compileHotReLoad": true

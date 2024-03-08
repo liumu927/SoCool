@@ -49,7 +49,7 @@ Page({
       that.officeBuilding,
       that.other,
     ]
-    console.log(that.tabLink);
+    // console.log(that.tabLink);
   },
 
   /**

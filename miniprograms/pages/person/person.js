@@ -210,7 +210,7 @@ Page({
           personReceiveState = 'null';
         }
 
-        console.log(personReceiveState);
+        // console.log(personReceiveState);
 
         this.setData({
           personReceiveState,
