@@ -9,7 +9,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    tabList: ['全部任务', '我的订单', '我的任务', '悬赏榜', '赏金猎人榜'],
+    tabList: ['全部任务', '我的订单', '历史任务', '悬赏榜', '赏金猎人榜'],
     // 默认选中
     tabNow: 0,
     orderList: [],
@@ -335,7 +335,7 @@ Page({
       phoneNumber: phone,
     })
   },
-  // 获取【我的任务】订单信息 
+  // 获取【历史任务】订单信息 
   getMyHelpOrder() {
     wx.request({
       url: 'http://localhost:3000/getMyHelpOrder',
@@ -358,7 +358,7 @@ Page({
     })
   },
 
-  // 【我的任务】订单单数总和
+  // 【历史任务】订单单数总和
   getHelpTotalNum() {
     wx.request({
       url: 'http://localhost:3000/getHelpTotalNum',
@@ -373,7 +373,7 @@ Page({
     })
   },
 
-  // 【我的任务】订单金额总和
+  // 【历史任务】订单金额总和
   getHelpTotalMoney() {
     wx.request({
       url: 'http://localhost:3000/getHelpTotalMoney',
@@ -423,6 +423,7 @@ Page({
         openid: this.data.openid
       },
       success: (res) => {
+        console.log(res);
         const {
           data
         } = res;
@@ -621,6 +622,7 @@ Page({
         names
       },
       success: (res) => {
+        console.log(res);
         const {
           data
         } = res;
@@ -628,7 +630,8 @@ Page({
           if (item.name === "快递代取" && item.info.expressCode) {
             item.expressCode = item.info.expressCode;
           }
-          if (item.name === "快递代取" && item.info.codeImg) {
+          // 在信息面板处显示【查看大图】
+          if ((item.name === "快递代取" || item.name === "快递代寄") && item.info.codeImg) {
             item.codeImg = item.info.codeImg;
           }
           item.info = this.formatInfo(item);

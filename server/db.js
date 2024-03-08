@@ -91,7 +91,7 @@ const OrderSchema = new mongoose.Schema({
   },
 });
 
-// 创建登录页面表
+// 创建管理员表
 const AdminSchema = new mongoose.Schema({
   openid: {
     type: String,
@@ -118,7 +118,7 @@ const Order = mongoose.model("Order", OrderSchema);
 const Admin = mongoose.model("Admin", AdminSchema);
 
 // Admin.create({
-//   openid: "oHOjj4rj3H_dKTyzhc3y8kLVZkOI",
+//   openid: "oVbMY6pJmN_EatHq2cCrvichitCk",
 //   nickName: "云归",
 //   role: "超级管理员",
 //   time: new Date(),

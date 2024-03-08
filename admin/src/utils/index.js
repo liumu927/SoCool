@@ -1,6 +1,8 @@
+// 格式化 订单信息
 export const formatOrderInfo = (data) => {
     const { name, info } = data;
     let orderDetail = [];
+
     if (name === '快递代取') {
         const tempObj = {
             business: "快递商家",

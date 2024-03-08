@@ -21,7 +21,7 @@
 </button>
 
 <!-- 【问题】在后台管理中完善逻辑 -->
-<button class="cell mt" bindtap="orderReceiver" wx:if="{{!admin}}">
+<button class="cell mt" bindtap="orderReceiver" wx:if="{{ admin }}">
   <view class="cellLeft">
     <image src="../../images/check.png"></image>
     <text>审核接单申请</text>

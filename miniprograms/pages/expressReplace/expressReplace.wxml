@@ -3,14 +3,14 @@
         <text>代寄物品信息说明： </text>
         <view class="detail">
             <textarea placeholder="请输入收件人的地址联系方式等" value="{{ helpContent }}" cols="30" rows="10" bindinput="getHelpContent"></textarea>
-            <image class="imgUrl" src="{{ imgUrl }}"></image>
-            <image class="getImg" src="{{ imgUrl ? '../../images/image_fill.png' : '../../images/image.png' }}" bindtap="getImgUrl"></image>
+            <image class="expressCode" src="{{ codeImg }}"></image>
+            <image class="getImg" src="{{ codeImg ? '../../images/image_fill.png' : '../../images/image.png' }}" bindtap="getImgUrl"></image>
         </view>
     </view>
     <view class="item">
         <text>取货地点: </text>
         <view class="getAddress">
-        <text bindtap="selectAddress">{{ address ? address : '请选择地址 >' }}</text>
+        <text bindtap="selectAddress">{{ address ? address : '请选择地址' }}</text>
         <image src="../../images/address.png"/>
         </view>
     </view>
@@ -31,7 +31,7 @@
         <text>帮助内容仅接单的同学可见, 安全放心!</text>
         <text>距离过长, 无人接单建议增加金额</text>
         <text>跑腿费</text>
-        <text>{{ 10 + addMoney }}元</text>
+        <text>{{ 5 + addMoney }}元</text>
     </view>
 
     <button class="submitBtn" bindtap="submit">立即发布</button>

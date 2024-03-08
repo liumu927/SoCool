@@ -69,7 +69,7 @@
       <view class="starNum" wx:if="{{ item.state === '已完成'}}">
         评分：{{item.starNum}}星
       </view>
-      <button wx:if="{{ item.codeImg }}" size="mini" type="default" bindtap="showCodeImg" data-item="{{ item }}">查看取件码截图</button>
+      <button wx:if="{{ item.codeImg }}" size="mini" type="default" bindtap="showCodeImg" data-item="{{ item }}">查看大图</button>
       <view class="money">
         赏金 ￥{{ item.money }}
       </view>

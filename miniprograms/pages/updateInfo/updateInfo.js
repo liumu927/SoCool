@@ -8,17 +8,6 @@ Page({
     userInfo: {},
   },
 
-  // 保存修改
-  saveChange() {
-    wx.setStorageSync('userInfo', this.data.userInfo);
-    wx.showToast({
-      title: '修改成功',
-    })
-    wx.switchTab({
-      url: '../person/person',
-    })
-  },
-
   updateAddress() {
     wx.navigateTo({
       url: '../address/address',
@@ -66,16 +55,29 @@ Page({
             // 注意：路径的 "\"
             path = path.replace(/\\/g, '/');
             let imgUrl = 'http://localhost:3000' + path.split('server')[1]
-        
+
             userInfo.avatarUrl = imgUrl;
-            // console.log(userInfo.avatarUrl);
+
             that.setData({
               userInfo
             })
+
             wx.hideLoading()
           }
         })
       }
+    })
+  },
+
+  // 保存修改
+  saveChange() {
+    wx.setStorageSync('userInfo', this.data.userInfo);
+
+    wx.showToast({
+      title: '修改成功',
+    })
+    wx.switchTab({
+      url: '../person/person',
     })
   },
 
@@ -84,6 +86,7 @@ Page({
    */
   onLoad: function (options) {
     const userInfo = wx.getStorageSync('userInfo');
+    console.log(userInfo.avatarUrl);
     this.setData({
       userInfo,
     })

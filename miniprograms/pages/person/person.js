@@ -140,7 +140,7 @@ Page({
     })
   },
 
-  // 判断当前用户是否是管理员【后台管理处理】
+  // 判断当前用户是否是管理员
   getAdminPower() {
     wx.request({
       url: 'http://localhost:3000/getAdminPower',
@@ -149,6 +149,7 @@ Page({
       },
       success: (res) => {
         this.setData({
+          // 存在值，取反是false
           admin: !!res.data
         })
       }

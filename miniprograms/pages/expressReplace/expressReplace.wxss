@@ -37,7 +37,7 @@ page {
   z-index: 10;
 }
 
-.help_content .detail .imgUrl {
+.help_content .detail .expressCode {
   width: 88%;
   height: 90%;
   position: absolute;

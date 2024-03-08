@@ -1,5 +1,4 @@
-import Vue from 'vue'
-import Vuex from 'vuex'
+const store = {}
 
+export default store
 
-Vue.use(Vuex)

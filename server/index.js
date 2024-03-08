@@ -5,6 +5,7 @@ const request = require("request");
 const multer = require("multer");
 const { response } = require("express");
 const path = require("path");
+const { log } = require("console");
 // const { log } = require("console");
 
 // 实例化
@@ -16,6 +17,7 @@ app.use("/file", express.static(path.join(__dirname, "file")));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+// 配置CORS跨域
 app.all("*", (req, res, next) => {
   res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader("Access-Control-Allow-Headers", "*");
@@ -118,7 +120,7 @@ app.post("/addOrder", async (req, res) => {
   }
 });
 
-// 获取全部订单接口
+// 获取全部订单接口：兼容小程序与后台，根据是否传参数
 app.get("/getAllOrder", async (req, res) => {
   const { page, pageSize, names } = req.query;
   if (page) {
