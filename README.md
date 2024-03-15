@@ -22,6 +22,8 @@ This template should help get you started developing with Vue 3 in Vite.
 
 小程序端-- **miniprograms:** 扫码登录后直接编译
 
+project setup: `npm install`
+
 后端-- **sever:** ` nodemon .\index.js` 或 ` node .\index.js`
 
 后台--**admin：**`npm run serve`
