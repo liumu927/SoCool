@@ -8,7 +8,7 @@
 
 ## Technology Stack
 
-前端：微信小程序、Vue2、VueCli、VueRouter3.x、Vuex、Axios、ElementUI、Cors
+前端：微信小程序、Vue2、VueCli、VueRouter3.x、Axios、ElementUI、Cors
 
 后端：Nodejs 、Express、Mongodb
 
