@@ -245,6 +245,8 @@ Page({
     } = options;
     const address = wx.getStorageSync('addressNow');
     const userInfo = wx.getStorageSync('userInfo');
+
+    // 判断数据是否存在
     if (address) {
       const {
         build,
