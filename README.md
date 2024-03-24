@@ -1,11 +1,5 @@
 # SoCool 飕酷
 
-This template should help get you started developing with Vue 3 in Vite.
-
-此模板将帮助您开始在Vite中使用Vue 3进行开发。
-
-
-
 **微信小程序项目 + 后台管理 --SoCool**
 
 ## Recommended IDE Setup
@@ -14,7 +8,7 @@ This template should help get you started developing with Vue 3 in Vite.
 
 ## Technology Stack
 
-前端：微信小程序、Vue2、VueCli、VueRouter3.x、Vuex、Axios、ElementUI、Cors
+前端：微信小程序、Vue2、VueCli、VueRouter3.x、Axios、ElementUI、Cors
 
 后端：Nodejs 、Express、Mongodb
 
